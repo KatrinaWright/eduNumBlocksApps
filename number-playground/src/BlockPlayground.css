@@ -1,0 +1,119 @@
+.block-playground {
+  position: relative;
+  width: 100%;
+  height: 580px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  touch-action: none; /* Prevents default touch actions for better drag experience */
+}
+
+.playground-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 50px 50px;
+  background-image:
+    linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  z-index: 1;
+}
+
+.block {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  user-select: none;
+  touch-action: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.block.dragging {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  opacity: 0.9;
+}
+
+/* Magnetic connection points */
+.magnetic-point {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 193, 7, 0.8);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 3;
+}
+
+/* Position the magnetic points on all four sides */
+.magnetic-point.right {
+  top: 50%;
+  right: -4px;
+  transform: translateY(-50%);
+}
+
+.magnetic-point.bottom {
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.magnetic-point.left {
+  top: 50%;
+  left: -4px;
+  transform: translateY(-50%);
+}
+
+.magnetic-point.top {
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.block:hover .magnetic-point,
+.block.dragging .magnetic-point,
+.block.connecting .magnetic-point {
+  opacity: 1;
+}
+
+/* Visual feedback during magnetic connection */
+.block.connecting {
+  box-shadow: 0 0 10px 2px rgba(255, 193, 7, 0.7);
+}
+
+/* Magnetic attraction visualization (will be shown dynamically through JS) */
+.magnetic-attraction {
+  position: absolute;
+  background-color: rgba(255, 193, 7, 0.3);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.magnetic-attraction.horizontal {
+  height: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.magnetic-attraction.vertical {
+  width: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Physics trail effect for dragging (optional) */
+.physics-trail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(100, 100, 255, 0.2);
+  pointer-events: none;
+  z-index: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}

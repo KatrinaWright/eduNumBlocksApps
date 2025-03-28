@@ -1,0 +1,182 @@
+.control-panel {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #EAEAEA;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 15px;
+}
+
+/* Color Picker Section */
+.color-picker {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.color-options {
+  display: flex;
+  gap: 8px;
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #d0d0d0;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.color-button:hover {
+  transform: scale(1.1);
+}
+
+.color-button.active {
+  border: 2px solid #333;
+  transform: scale(1.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Block Controls Section */
+.block-controls {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.number-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.number-button {
+  min-width: 50px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid transparent;
+}
+
+.number-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.number-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Rainbow colored buttons */
+.red-button {
+  background-color: #FF0000;
+  border-color: #CC0000;
+  color: white;
+}
+
+.orange-button {
+  background-color: #FF8800;
+  border-color: #CC6600;
+  color: white;
+}
+
+.yellow-button {
+  background-color: #FFDD00;
+  border-color: #CCAA00;
+  color: #333333;
+}
+
+.green-button {
+  background-color: #00CC00;
+  border-color: #009900;
+  color: white;
+}
+
+.blue-button {
+  background-color: #0088FF;
+  border-color: #0066CC;
+  color: white;
+}
+
+.indigo-button {
+  background-color: #4444FF;
+  border-color: #3333CC;
+  color: white;
+}
+
+.violet-button {
+  background-color: #9900FF;
+  border-color: #7700CC;
+  color: white;
+}
+
+.pink-button {
+  background-color: #FF66CC;
+  border-color: #CC4499;
+  color: white;
+}
+
+.gray-button {
+  background-color: #888888;
+  border-color: #666666;
+  color: white;
+}
+
+.white-red-button {
+  background-color: white;
+  border-color: #FF0000;
+  color: #FF0000;
+  border-width: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .control-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .color-picker, .block-controls {
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+  }
+  
+  .number-buttons {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  
+  .number-button {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .number-button {
+    min-width: 40px;
+    font-size: 16px;
+  }
+  
+  .color-options {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,118 @@
+.playground-container {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .playground {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-image: 
+      linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 100px 100px;
+    touch-action: none; /* Prevents default touch actions on mobile */
+  }
+  
+  .connections-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow interaction with blocks beneath */
+    z-index: 10;
+  }
+  
+  .block {
+    position: absolute;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: grab;
+    user-select: none;
+    z-index: 20;
+    transition: box-shadow 0.2s ease, transform 0.05s ease;
+    will-change: transform;
+  }
+  
+  .block.dragging {
+    cursor: grabbing;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 30;
+    opacity: 0.9;
+  }
+  
+  .block.connected {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .connection-point {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #FFC107;
+    border-radius: 50%;
+    z-index: 25;
+  }
+  
+  .connection-point.right {
+    top: 50%;
+    right: -4px;
+    transform: translateY(-50%);
+  }
+  
+  .connection-point.bottom {
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Animation for blocks that are about to connect */
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.7; }
+  }
+  
+  .block.about-to-connect .connection-point {
+    animation: pulse 1s infinite;
+  }
+  
+  /* Add some responsive adjustments for various tablet sizes */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .playground-container {
+      height: 500px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .playground-container {
+      height: 580px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .playground-container {
+      height: 400px;
+    }
+  }
+  
+  /* Ensure proper touch handling on mobile devices */
+  @media (pointer: coarse) {
+    .block {
+      min-width: 60px;
+      min-height: 60px;
+    }
+    
+    .connection-point {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
