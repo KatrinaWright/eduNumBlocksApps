@@ -1,0 +1,39 @@
+---
+description: Guidelines for CSS development with focus on mobile-first design for an Android tablet-oriented children's application, with offline capability requirements.
+globs: **/*.css, **/*.html
+---
+# CSS Development Guidelines for Children's Tablet Application
+
+These guidelines outline the approach for styling the application, optimizing for tablets while ensuring a child-friendly interface with offline capabilities.
+
+## Core CSS Principles
+
+* **CSS Approach:** Use vanilla CSS only, avoiding frameworks or preprocessors to keep file size minimal.
+* **Responsiveness:** Implement mobile-first design principles with special consideration for landscape orientation.
+* **Primary Device Target:** Optimize primarily for Android tablets as the main platform.
+
+## Design Requirements
+
+### User Interface
+
+* **Color Scheme:** Use bright, engaging colors appropriate for a child audience.
+* **Button Design:** Create large, easily touchable buttons to accommodate children's motor skills.
+* **Text Content:** Minimize reading requirements - prefer visual cues and simple instructions.
+* **Touch Targets:** Ensure all interactive elements have adequate size for children's touch accuracy.
+
+### Cross-Platform Support
+
+* **Browser Compatibility:** Ensure functionality in standard browsers for testing and debugging.
+* **Input Methods:** Support both touch interactions and mouse input to simulate touch controls during development.
+
+## Technical Constraints
+
+* **File Size:** Keep total project size under 5MB to meet upload and download requirements.
+* **Offline Functionality:** Ensure the application works without internet access once downloaded.
+* **Data Privacy:** Implement no data collection mechanisms, suitable for children's privacy requirements.
+
+## Development Recommendations
+
+* **Image Optimization:** Use compressed images and minimize asset count to stay within size limits.
+* **Code Organization:** Keep CSS modular and well-commented for maintainability.
+* **Testing:** Regularly test on actual Android tablets, not just browser emulations.
