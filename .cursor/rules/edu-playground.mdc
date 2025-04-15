@@ -1,0 +1,101 @@
+---
+description: Comprehensive project guidelines covering development standards, Git workflow, and CSS implementation for children's tablet applications.
+globs: **/*
+---
+# Project Development Guidelines
+
+These guidelines ensure consistent quality across the project by standardizing practices for code development, version control, and UI implementation.
+
+## Development Standards
+
+### Documentation
+
+* **Readme Maintenance:** Always update the readme when new features are added to maintain a comprehensive summary of total features.
+* **Comment Formatting:** Place comments on the right side of the relevant code, with all comments aligned with each other in the same margin.
+
+### Testing Requirements
+
+* **Test Framework Selection:** 
+  * Use pytest for Python files
+  * Use jest for JavaScript files
+* **Coverage Requirements:** 
+  * Maintain at least 50% test coverage for turtle programs.
+  * Maintain at least 75% test coverage for all react programs.
+* **Testing Validation:** All tests must pass with every iteration or code change.
+
+### Code Organization
+
+* **Code Duplication:** Refactor any code that is repeated 3 or more times into its own function to maintain DRY principles (Don't Repeat Yourself).
+
+## Git Workflow Guidelines
+
+### Commit Practices
+
+#### Commit Frequency
+
+* **Commit Early:** Make commits as soon as you complete a logical unit of work.
+* **Commit Often:** Don't wait until you've made numerous changes before committing.
+* **Atomic Commits:** Each commit should represent a single logical change whenever possible.
+
+#### Commit Messages
+
+* **Descriptive Labels:** Use clear, descriptive labels for all commit messages.
+* **Succinct Text:** Keep commit messages concise while still being informative.
+* **Content Guidelines:** Focus on what changes were made rather than how they were implemented.
+* **Format Example:** "Add user authentication feature" rather than "Made changes to authentication."
+
+#### Best Practices
+
+* **Present Tense:** Write commit messages in the present tense (e.g., "Fix bug" not "Fixed bug").
+* **Avoid Vague Messages:** Don't use messages like "WIP", "Fix stuff", or "Update code".
+* **Include Context:** When appropriate, include ticket/issue numbers in the commit message.
+* **Avoid Committing Clutter:** Never stage node_modules, .git, .env, or other local files to be committed.
+
+### Branch Management
+
+* **Development Branches:** Create separate development branches for features, bug fixes, or enhancements rather than working directly on the main branch.
+* **Work-in-Progress Branches:** Use iterative branches for work-in-progress pieces to isolate experimental or incomplete features.
+* **Branch Naming:** Follow industry standard practices for branch naming:
+  * `feature/feature-name` for new features
+  * `bugfix/issue-description` for bug fixes
+  * `hotfix/issue-description` for critical fixes
+  * `release/version` for release preparation
+
+#### Version Control Best Practices
+
+* **Pull Requests:** Use pull requests for code review before merging into the main branch.
+* **Branch Lifecycle:** Delete branches after they have been successfully merged to avoid clutter.
+
+## CSS Development for Children's Tablet Application
+
+### Core CSS Principles
+
+* **CSS Approach:** Use vanilla CSS only, avoiding frameworks or preprocessors to keep file size minimal.
+* **Responsiveness:** Implement mobile-first design principles with special consideration for landscape orientation.
+* **Primary Device Target:** Optimize primarily for Android tablets as the main platform.
+
+### Design Requirements
+
+#### User Interface
+
+* **Color Scheme:** Use bright, engaging colors appropriate for a child audience.
+* **Button Design:** Create large, easily touchable buttons to accommodate children's motor skills.
+* **Text Content:** Minimize reading requirements - prefer visual cues and simple instructions.
+* **Touch Targets:** Ensure all interactive elements have adequate size for children's touch accuracy.
+
+#### Cross-Platform Support
+
+* **Browser Compatibility:** Ensure functionality in standard browsers for testing and debugging.
+* **Input Methods:** Support both touch interactions and mouse input to simulate touch controls during development.
+
+### Technical Constraints
+
+* **File Size:** Keep total project size under 5MB to meet upload and download requirements.
+* **Offline Functionality:** Ensure the application works without internet access once downloaded.
+* **Data Privacy:** Implement no data collection mechanisms, suitable for children's privacy requirements.
+
+### Development Recommendations
+
+* **Image Optimization:** Use compressed images and minimize asset count to stay within size limits.
+* **Code Organization:** Keep CSS modular and well-commented for maintainability.
+* **Testing:** Regularly test on actual Android tablets, not just browser emulations.
