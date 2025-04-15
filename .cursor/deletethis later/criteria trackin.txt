@@ -1,0 +1,124 @@
+side chat
+
+Agent mode
+
+yes cursor rules
+
+add cursor rukes file
+
+one handed, grammer, full, avoid, one
+
+merge these innt obe  new app calc-playground w/ tests, proirtize json dta
+
+code creation, code modification, code testing, code commenting
+
+JavaScript, other (HTML/CSS)
+
+yes, files and edits
+
+README.md
+number-blocks-app\README.md
+number-playground\README.md
+
+15
+
+1) A new app called 'calc-playground' should be created.
+instruction following
+Explicit
+
+2) The new app should maintain the language and frameworks of the merged apps, in this case Vite, React, JavaScript, and basic CSS (not tailwind).
+instruction folloowing
+implicit
+
+3) The cursor rules 'edu-playground.mdc' file should be followed, including this rule: "**Readme Maintenance:** Always update the readme when new features are added to maintain a comprehensive summary of total features." For example, the README.md file at the root of the project should be updated with the newly created project summary and a project-specific README should be added to the new app project with details on app features included.  
+Documentation/coments
+
+4) The cursor rules 'edu-playground.mdc' file should be followed, including this rule: "**Code Duplication:** Refactor any code that is repeated 3 or more times into its own function to maintain DRY principles (Don't Repeat Yourself)." For example, there should not be any line of code that is repeated 3 or more times. 
+Readability & maintainability
+
+5) The app should have appropriate tests added based on the coding language used. For example, Jest or Cypress would be good testing frameworks for a JavaScript Application.
+instruction following
+Explicit
+
+6) The cursor rules 'edu-playground.mdc' file should be followed, including this rule: "* **Coverage Requirements:** Maintain at least 75% test coverage for all react programs." As such, 75% test coverage should be established for this new codebase since react is being used. 
+Correctness
+implicit
+
+7) The typos in the prompt should be accurately interpreted: 'innt' -> 'into', 'obe' -> 'one', 'w/' -> 'with', 'proirtize' -> 'prioritize', 'dta' -> 'data'.
+instruction following 
+implicit
+
+8) At least half of the main features from number-blocks-app should exist in the new merged app. For example, at least 3 of these 6 features should be present: 1) calculator, 2) colors according to total number of blocks based on information in the json file, 3) 'did you know' facts shown for each number according to the information in the json file, 4) draggable blocks using touch or mouse controls, 5) instantly rearrangeable blocks with buttons into specified shapes or patterns based on club information in the json file, 6) color-coordinated calculator buttons.
+Correctness
+implicit
+
+9) At least half of the main features from number-playground-app should exist in the new merged app, For example, at least 3 of these 6 features should be present: 1) 'magnetic' block edges that click into place when dropped near another block, 2) add multiple blocks randomly scattered across the playground, 3) choose specific block color, 4) overlap blocks when stacking on top of each other, 5) large gridlines and blocks for small fingers to easily grab, 6) draggable blocks to move around the board as desired. 
+Correctgness
+implicit
+
+10) Ideal combination: The new app should feature these key features from both apps, prioritizing the json data as stated. For example, 1) the calculator component should exist, 2) the buttons and grids should be large enough for small fingers, 3) the blocks should be able to be dragged around the playground and click together once they are dropped near other blocks, 4) the colors of the blocks should match the color of the total connected blocks as defined by the json document, 5) the 'Did you know' information from the json file should be displayed according to the total number of blocks on the board, 6) blocks should be added randomly across the board when first dropped in, 7) blocks should be able to be organized into shapes available with buttons.
+Correctness
+implicit
+
+11) Any comments made should be to the right of the related code block.
+Documentation
+
+12) The provided json file features should be prioritized when blocks are connected. For example, the colors should follow this pattern: 1s = 1 red block; 2s = 2 orange blocks; 3s = 3 yellow blocks; 4s = 4 green blocks; 5s =  5 light blue blocks; 6s = 6 indigo blocks; 7s = 1 red block, 1 orange block, 1 yellow block, 1 green block, 1 light blue block, 1 indigo block, and 1 violet block; 8s = 8 pink blocks; 9s = 3 light gray blocks, 3 mid gray blocks, and 3 dark gray blocks; 10s = 10 white blocks with red sides; 20s = 20 light-orange blocks with orange sides; 30s = 30 light-yellow blocks with yellow sides; 40s = 40 light-green blocks with green sides; 50s = light-light-blue blocks with light-blue sides; 60s = 60 light-purple blocks with indigo sides; and 70s light-violet blocks with violet sides. Numbers 73 and beyond should not have any data to process with the current json file. 
+Correctness
+implicit
+
+13) The application should correctly read the "did you know" data in the json file and display the correct tip associated with the current number. The tip should change as the numbers show change. For example, when 7 blocks are shown, at least one of these real_world_examples should be displayed:      
+
+    "real_world_examples": [
+        "Days in a week",
+        "Rainbow colors",
+        "Continents on Earth",
+        "Musical notes in a scale"
+      ] 
+
+And when 1 more block is added to the 7 blocks to equal 8 blocks, then at least one of these real world examples should show instead:
+
+    "real_world_examples": [
+        "Spider legs",
+        "Octagon sides",
+        "Piano octave notes",
+        "Pieces in a byte"
+      ]
+
+Numbers 73 and beyond should not have any data to process with the current json file and should give a response saying that there is no entry for that number yet in the 'did you know' section.
+
+Correctness
+implicit
+
+14) The json file should not be modified, and only the current data options should be accessed to modify the application. For example, here is the current structure of one entry in the json file: 
+  "12": {
+      "colors": {"white_red": 10, "orange": 2},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 4, 6, 12]
+      },
+      "real_world_examples": [
+        "Months in a year",
+        "Dozen eggs",
+        "Hours on a clock face",
+        "Inches in a foot"
+      ]
+No other options should be attempted to be accessed like 'shape' or 'money' because they are not valid attributes in the json file. 
+
+correctness
+implicit
+
+15) React should be utilized correctly to have the blocks change color dynamically on the client's side without needing to refresh the page. 
+efficiency
+
+DA#3
+18670
+
+
+
