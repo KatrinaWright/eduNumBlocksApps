@@ -13,5 +13,13 @@ module.exports = {
   testMatch: [
     "**/__tests__/**/*.jsx",
     "**/?(*.)+(spec|test).jsx"
+  ],
+  collectCoverage: true,
+  coverageReporters: ["text", "lcov"],
+  coverageDirectory: "coverage",
+  collectCoverageFrom: [
+    "src/**/*.{js,jsx}",
+    "!src/main.jsx",
+    "!**/node_modules/**"
   ]
 }; 

@@ -37,6 +37,7 @@ const Block = ({ id, color, position, onMove }) => {
     <div
       ref={drag}
       className="block"
+      data-testid="block"
       style={{
         backgroundColor: colorMap[color] || color,
         opacity: isDragging ? 0.5 : 1,
@@ -67,6 +68,7 @@ const BlocksContainer = ({ children, onDrop }) => {
   return (
     <div 
       ref={drop} 
+      data-testid="blocks-container"
       className={`blocks-container ${isOver ? 'highlight-drop-area' : ''}`}
     >
       {children}
