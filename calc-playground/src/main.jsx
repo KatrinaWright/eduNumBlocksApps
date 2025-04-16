@@ -1,10 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react'               /* React core library */
+import ReactDOM from 'react-dom/client'  /* ReactDOM for rendering */
+import App from './App.jsx'           /* Main App component */
+import './index.css'                  /* Global styles */
 
 // Global API object for the CalcPlayground
-window.calcPlaygroundAPI = {
+window.calcPlaygroundAPI = {          /* Global API object for the CalcPlayground */
   addBlocks: () => console.log("CalcPlayground not initialized yet"),
   setActiveColor: () => console.log("CalcPlayground not initialized yet"),
   reset: () => console.log("CalcPlayground not initialized yet"),
@@ -12,7 +12,7 @@ window.calcPlaygroundAPI = {
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <React.StrictMode>                  /* Strict mode for development checks */
     <App />
   </React.StrictMode>,
 ) 

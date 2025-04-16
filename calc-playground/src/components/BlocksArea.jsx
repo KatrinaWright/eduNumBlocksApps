@@ -23,6 +23,16 @@ const colorMap = {
   'light_yellow': '#FFFACD'
 };
 
+// Helper function to calculate block position
+const calculatePosition = (index, columnsCount = 10) => {
+  const column = index % columnsCount;
+  const row = Math.floor(index / columnsCount);
+  return {
+    x: column * 35,
+    y: row * 35
+  };
+};
+
 // The draggable block component
 const Block = ({ id, color, position, onMove }) => {
   const [{ isDragging }, drag] = useDrag({
@@ -116,6 +126,15 @@ const ExamplesPanel = ({ examples }) => {
   );
 };
 
+// Create a block with proper ID and position
+const createBlock = (color, index, uniqueId = '') => {
+  return {
+    id: `${color}-${uniqueId || index}`,
+    color,
+    position: calculatePosition(index)
+  };
+};
+
 // Main Blocks Area component with forwarded ref
 const BlocksArea = forwardRef(({ number, numberData, activeColor }, ref) => {
   const [blocks, setBlocks] = useState([]);
@@ -144,20 +163,7 @@ const BlocksArea = forwardRef(({ number, numberData, activeColor }, ref) => {
     // Create blocks for each color
     Object.entries(colorsData).forEach(([color, count]) => {
       for (let i = 0; i < count; i++) {
-        // Arrange in a grid initially
-        const column = currentIndex % 10;
-        const row = Math.floor(currentIndex / 10);
-        
-        newBlocks.push({
-          id: `${color}-${i}`,
-          color,
-          // Initial positions in a grid layout
-          position: { 
-            x: column * 35, 
-            y: row * 35 
-          }
-        });
-        
+        newBlocks.push(createBlock(color, currentIndex, i));
         currentIndex++;
       }
     });
@@ -194,17 +200,7 @@ const BlocksArea = forwardRef(({ number, numberData, activeColor }, ref) => {
       
       for (let i = 0; i < count; i++) {
         const index = newBlocks.length;
-        const column = index % 10;
-        const row = Math.floor(index / 10);
-        
-        newBlocks.push({
-          id: `${colorName}-${Date.now()}-${i}`,
-          color: colorName,
-          position: { 
-            x: column * 35, 
-            y: row * 35 
-          }
-        });
+        newBlocks.push(createBlock(colorName, index, `${Date.now()}-${i}`));
       }
       
       return newBlocks;
@@ -216,11 +212,10 @@ const BlocksArea = forwardRef(({ number, numberData, activeColor }, ref) => {
     setBlocks([]);
   };
 
-  // Arrange blocks based on club pattern
-  const arrangeBlocks = (pattern) => {
-    const blockCount = blocks.length;
-    let newPositions = [];
-
+  // Generate positions for different arrangements
+  const generateArrangementPositions = (pattern, blockCount) => {
+    let positions = [];
+    
     switch (pattern) {
       case 'step_squad': {
         // Arrange in a triangle pattern
@@ -230,7 +225,7 @@ const BlocksArea = forwardRef(({ number, numberData, activeColor }, ref) => {
 
         while (blockIndex < blockCount) {
           for (let i = 0; i < currentRow && blockIndex < blockCount; i++) {
-            newPositions.push({
+            positions.push({
               x: i * 35,
               y: currentY
             });
@@ -260,7 +255,7 @@ const BlocksArea = forwardRef(({ number, numberData, activeColor }, ref) => {
           for (let x = 0; x < bestWidth; x++) {
             const index = y * bestWidth + x;
             if (index < blockCount) {
-              newPositions.push({
+              positions.push({
                 x: x * 35,
                 y: y * 35
               });
@@ -271,18 +266,19 @@ const BlocksArea = forwardRef(({ number, numberData, activeColor }, ref) => {
       }
       default: {
         // Default grid arrangement
-        const columns = 10;
         for (let i = 0; i < blockCount; i++) {
-          const column = i % columns;
-          const row = Math.floor(i / columns);
-          
-          newPositions.push({
-            x: column * 35,
-            y: row * 35
-          });
+          positions.push(calculatePosition(i));
         }
       }
     }
+    
+    return positions;
+  };
+
+  // Arrange blocks based on club pattern
+  const arrangeBlocks = (pattern) => {
+    const blockCount = blocks.length;
+    const newPositions = generateArrangementPositions(pattern, blockCount);
 
     // Update blocks with new positions
     setBlocks(prevBlocks => 

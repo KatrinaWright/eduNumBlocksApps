@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import '../styles/Calculator.css';
+import { useState } from 'react';          /* React hook for state management */
+import '../styles/Calculator.css';    /* Component-specific styles */
 
 // Color mapping for numbers 0-9
-const numberColors = {
-  '0': '#FFFFFF', // white
-  '1': '#FF0000', // red
-  '2': '#FFA500', // orange
-  '3': '#FFFF00', // yellow
-  '4': '#008000', // green
-  '5': '#ADD8E6', // light blue
-  '6': '#4B0082', // indigo
-  '7': '#EE82EE', // violet
-  '8': '#FFC0CB', // pink
-  '9': '#A9A9A9'  // dark gray
+const numberColors = {                /* Color mapping for numbers 0-9 */
+  '0': '#FFFFFF',                     /* white */
+  '1': '#FF0000',                     /* red */
+  '2': '#FFA500',                     /* orange */
+  '3': '#FFFF00',                     /* yellow */
+  '4': '#008000',                     /* green */
+  '5': '#ADD8E6',                     /* light blue */
+  '6': '#4B0082',                     /* indigo */
+  '7': '#EE82EE',                     /* violet */
+  '8': '#FFC0CB',                     /* pink */
+  '9': '#A9A9A9'                      /* dark gray */
 };
 
 function Calculator({ onResultChange }) {
@@ -21,14 +21,14 @@ function Calculator({ onResultChange }) {
   const [operator, setOperator] = useState(null);
   const [waitingForSecondOperand, setWaitingForSecondOperand] = useState(false);
 
-  const clearAll = () => {
+  const clearAll = () => {            /* Reset calculator to initial state */
     setDisplay('0');
     setFirstOperand(null);
     setOperator(null);
     setWaitingForSecondOperand(false);
   };
 
-  const handleDigit = (digit) => {
+  const handleDigit = (digit) => {    /* Handle numeric button clicks */
     if (waitingForSecondOperand) {
       setDisplay(digit);
       setWaitingForSecondOperand(false);
@@ -37,7 +37,7 @@ function Calculator({ onResultChange }) {
     }
   };
 
-  const handleDecimalPoint = () => {
+  const handleDecimalPoint = () => {  /* Handle decimal point button click */
     if (waitingForSecondOperand) {
       setDisplay('0.');
       setWaitingForSecondOperand(false);
@@ -49,7 +49,7 @@ function Calculator({ onResultChange }) {
     }
   };
 
-  const handleOperation = (nextOperator) => {
+  const handleOperation = (nextOperator) => {  /* Handle operation button clicks */
     const inputValue = parseFloat(display);
 
     if (firstOperand === null) {
@@ -64,7 +64,7 @@ function Calculator({ onResultChange }) {
     setOperator(nextOperator);
   };
 
-  const performCalculation = (op, first, second) => {
+  const performCalculation = (op, first, second) => {  /* Perform arithmetic operations */
     switch (op) {
       case '+':
         return first + second;
@@ -79,7 +79,7 @@ function Calculator({ onResultChange }) {
     }
   };
 
-  const handleEquals = () => {
+  const handleEquals = () => {        /* Handle equals button click */
     if (!operator || firstOperand === null) return;
 
     const inputValue = parseFloat(display);
@@ -90,11 +90,9 @@ function Calculator({ onResultChange }) {
     setOperator(null);
     setWaitingForSecondOperand(false);
     
-    // Send result to parent component to update blocks
-    onResultChange(Math.round(result)); // Round to whole number for blocks
+    onResultChange(Math.round(result));  /* Round to whole number for blocks */
     
-    // Update the global API with the result
-    if (window.calcPlaygroundAPI) {
+    if (window.calcPlaygroundAPI) {      /* Update the global API with the result */
       window.calcPlaygroundAPI.calculate(result);
     }
   };
@@ -156,7 +154,7 @@ function Calculator({ onResultChange }) {
             onClick={() => handleDigit('5')}
             style={{ 
               backgroundColor: numberColors['5'],
-              color: '#000'  // Light blue gets black text
+              color: '#000'          /* Light blue gets black text */
             }}
           >
             5
@@ -198,7 +196,7 @@ function Calculator({ onResultChange }) {
             onClick={() => handleDigit('3')}
             style={{ 
               backgroundColor: numberColors['3'],
-              color: '#000'  // Yellow gets black text
+              color: '#000'
             }}
           >
             3
@@ -210,19 +208,49 @@ function Calculator({ onResultChange }) {
             onClick={() => handleDigit('0')}
             style={{ 
               backgroundColor: numberColors['0'],
-              color: '#000'  // White gets black text
+              color: '#000'
             }}
           >
             0
           </button>
-          <button className="key-dot" onClick={handleDecimalPoint}>.</button>
+          <button 
+            className="key-dot" 
+            onClick={handleDecimalPoint}
+          >
+            .
+          </button>
         </div>
         <div className="operator-keys">
-          <button className="key-operator" onClick={() => handleOperation('+')}>+</button>
-          <button className="key-operator" onClick={() => handleOperation('-')}>−</button>
-          <button className="key-operator" onClick={() => handleOperation('×')}>×</button>
-          <button className="key-operator" onClick={() => handleOperation('÷')}>÷</button>
-          <button className="key-equals" onClick={handleEquals}>=</button>
+          <button 
+            className="key-operator" 
+            onClick={() => handleOperation('+')}
+          >
+            +
+          </button>
+          <button 
+            className="key-operator" 
+            onClick={() => handleOperation('-')}
+          >
+            −
+          </button>
+          <button 
+            className="key-operator" 
+            onClick={() => handleOperation('×')}
+          >
+            ×
+          </button>
+          <button 
+            className="key-operator" 
+            onClick={() => handleOperation('÷')}
+          >
+            ÷
+          </button>
+          <button 
+            className="key-equals" 
+            onClick={handleEquals}
+          >
+            =
+          </button>
         </div>
       </div>
     </div>

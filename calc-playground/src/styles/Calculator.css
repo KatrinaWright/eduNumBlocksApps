@@ -1,117 +1,117 @@
 .calculator {
-  width: 100%;
-  max-width: 320px;
-  background-color: #f0f0f0;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  margin: 0 auto;
+  width: 100%;                       /* Full width container */
+  max-width: 320px;                  /* Limit width for usability */
+  background-color: #f0f0f0;         /* Light gray background */
+  border-radius: 12px;               /* Rounded corners for child-friendly design */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden;                  /* Prevent overflow */
+  margin: 0 auto;                    /* Center horizontally */
 }
 
 .calculator-display {
-  background-color: #333;
-  color: white;
-  font-size: 2.5rem;
-  padding: 1rem;
-  text-align: right;
-  min-height: 80px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  word-break: break-all;
+  background-color: #333;            /* Dark background for display contrast */
+  color: white;                      /* White text for readability */
+  font-size: 2.5rem;                 /* Large font for visibility */
+  padding: 1rem;                     /* Consistent padding */
+  text-align: right;                 /* Right-align numbers in display */
+  min-height: 80px;                  /* Fixed height for consistency */
+  display: flex;                     /* Use flexbox for alignment */
+  justify-content: flex-end;         /* Right-align content */
+  align-items: center;               /* Center vertically */
+  word-break: break-all;             /* Prevent overflow of long numbers */
 }
 
 .calculator-keypad {
-  display: grid;
+  display: grid;                     /* Grid layout for keypad */
   /* Four columns: 3 for digits/functions and 1 for operators */
-  grid-template-columns: 3fr 1fr;
-  background-color: #999;
+  grid-template-columns: 3fr 1fr;    /* 3:1 ratio for keys vs operators */
+  background-color: #999;            /* Medium gray background */
 }
 
 .function-keys {
   /* Span 3 columns for the clear button */
-  grid-column: span 3;
-  display: grid;
+  grid-column: span 3;               /* Span across digit columns */
+  display: grid;                     /* Grid layout */
 }
 
 .digit-keys {
   /* Digit keypad as a 4x3 grid for clear number layout */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column: span 3;
+  display: grid;                     /* Grid layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-column: span 3;               /* Span across digit columns */
 }
 
 .key-zero {
   /* Make 0 button span 2 columns like traditional calculators */
-  grid-column: span 2;
+  grid-column: span 2;               /* Zero key spans 2 columns */
 }
 
 .operator-keys {
   /* Operators in a single column */
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  grid-column: 4;
-  grid-row: span 2;
+  display: grid;                     /* Grid layout */
+  grid-template-rows: repeat(5, 1fr); /* 5 equal rows */
+  grid-column: 4;                    /* Fourth column */
+  grid-row: span 2;                  /* Span both key sections */
 }
 
 .calculator button {
-  border: none;
-  font-size: 1.5rem;
-  height: 60px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  outline: none;
-  margin: 1px;
+  border: none;                      /* Remove default borders */
+  font-size: 1.5rem;                 /* Large text for easy reading */
+  height: 60px;                      /* Tall buttons for easy touch targets */
+  cursor: pointer;                   /* Pointer cursor for interaction */
+  transition: background-color 0.2s; /* Smooth hover transition */
+  outline: none;                     /* Remove outline */
+  margin: 1px;                       /* Small gap between buttons */
 }
 
 .calculator button:hover {
-  opacity: 0.9;
+  opacity: 0.9;                      /* Slight fade on hover */
 }
 
 .calculator button:active {
-  transform: translateY(2px);
+  transform: translateY(2px);        /* Push effect for tactile feedback */
 }
 
 .key-operator {
-  background-color: #f5923e !important;
-  color: white;
-  font-weight: bold;
+  background-color: #f5923e !important; /* Orange for operators */
+  color: white;                      /* White text for contrast */
+  font-weight: bold;                 /* Bold text for visibility */
 }
 
 .key-equals {
-  background-color: #2196f3 !important;
-  color: white;
-  font-weight: bold;
+  background-color: #2196f3 !important; /* Blue for equals */
+  color: white;                      /* White text for contrast */
+  font-weight: bold;                 /* Bold text for visibility */
 }
 
 .key-clear {
-  background-color: #f44336 !important;
-  color: white;
-  font-weight: bold;
+  background-color: #f44336 !important; /* Red for clear button */
+  color: white;                      /* White text for contrast */
+  font-weight: bold;                 /* Bold text for visibility */
 }
 
 .key-digit {
-  font-weight: bold;
+  font-weight: bold;                 /* Bold digits for visibility */
 }
 
 .key-dot {
-  background-color: #e0e0e0;
-  font-weight: bold;
+  background-color: #e0e0e0;         /* Light gray for decimal point */
+  font-weight: bold;                 /* Bold for visibility */
 }
 
 /* Ensure the calculator is properly sized on all devices */
 @media (max-width: 768px) {
   .calculator {
-    max-width: 100%;
+    max-width: 100%;                 /* Full width on smaller screens */
   }
   
   .calculator-display {
-    font-size: 2rem;
-    min-height: 60px;
+    font-size: 2rem;                 /* Smaller font on small screens */
+    min-height: 60px;                /* Reduced height on small screens */
   }
   
   .calculator button {
-    font-size: 1.3rem;
-    height: 50px;
+    font-size: 1.3rem;               /* Smaller text on small screens */
+    height: 50px;                    /* Smaller buttons on small screens */
   }
 } 

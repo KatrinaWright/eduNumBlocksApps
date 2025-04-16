@@ -2,19 +2,19 @@ import { useState, useEffect, useRef } from 'react';
 import './App.css';
 
 // Import our merged components
-import Calculator from './components/Calculator';
+import Calculator from './components/Calculator';       /* Our merged components */
 import BlocksArea from './components/BlocksArea';
 import ControlPanel from './components/ControlPanel';
 
 function App() {
   // State for JSON data
-  const [numberData, setNumberData] = useState({});
+  const [numberData, setNumberData] = useState({});     /* State for JSON data */
   const [currentNumber, setCurrentNumber] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
   // State for UI settings
-  const [activeColor, setActiveColor] = useState('#FF5252');
+  const [activeColor, setActiveColor] = useState('#FF5252');   /* State for UI settings */
   const [orientation, setOrientation] = useState(
     window.innerWidth > window.innerHeight ? 'landscape' : 'portrait'
   );
@@ -22,7 +22,7 @@ function App() {
   const blocksAreaRef = useRef();
   
   // Load the JSON data when the app starts
-  useEffect(() => {
+  useEffect(() => {                                /* Load the JSON data when the app starts */
     setLoading(true);
     fetch('/numbers-data.json')
       .then(response => {
@@ -42,7 +42,7 @@ function App() {
   }, []);
   
   // Add event listener to detect orientation changes
-  useEffect(() => {
+  useEffect(() => {                                /* Add event listener to detect orientation changes */
     const handleResize = () => {
       setOrientation(
         window.innerWidth > window.innerHeight ? 'landscape' : 'portrait'
@@ -56,7 +56,7 @@ function App() {
   }, []);
 
   // Set up the global API
-  useEffect(() => {
+  useEffect(() => {                                /* Set up the global API */
     if (!loading && !error) {
       window.calcPlaygroundAPI = {
         addBlocks: (count, color) => {
@@ -73,8 +73,7 @@ function App() {
           }
         },
         calculate: (expression) => {
-          // This would call the calculator's calculate function
-          const result = eval(expression); // Simple evaluation for demo
+          const result = eval(expression);         /* Simple evaluation for demo */
           setCurrentNumber(result.toString());
           return result;
         }
@@ -83,12 +82,12 @@ function App() {
   }, [loading, error, activeColor]);
 
   // Handle result from calculator
-  const handleCalculatorResult = (result) => {
+  const handleCalculatorResult = (result) => {     /* Handle result from calculator */
     setCurrentNumber(result.toString());
   };
 
   // Handle adding blocks from control panel
-  const handleAddBlocks = (count, color) => {
+  const handleAddBlocks = (count, color) => {      /* Handle adding blocks from control panel */
     if (color) {
       setActiveColor(color);
     }
@@ -97,18 +96,18 @@ function App() {
   };
 
   // Handle color change from control panel
-  const handleColorChange = (color) => {
+  const handleColorChange = (color) => {           /* Handle color change from control panel */
     setActiveColor(color);
     window.calcPlaygroundAPI.setActiveColor(color);
   };
 
   // Show loading state
-  if (loading) {
+  if (loading) {                                   /* Show loading state */
     return <div className="loading">Loading number data...</div>;
   }
 
   // Show error state
-  if (error) {
+  if (error) {                                     /* Show error state */
     return <div className="error">Error: {error}</div>;
   }
 

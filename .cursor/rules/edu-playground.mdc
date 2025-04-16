@@ -1,4 +1,9 @@
 ---
+description: 
+globs: 
+alwaysApply: false
+---
+---
 description: Comprehensive project guidelines covering development standards, Git workflow, and CSS implementation for children's tablet applications.
 globs: **/*
 ---

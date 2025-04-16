@@ -1,162 +1,162 @@
 .control-panel {
-  width: 100%;
-  background-color: #EAEAEA;
-  border-radius: 10px;
-  padding: 15px 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;                      /* Full width container */
+  background-color: #EAEAEA;        /* Light gray background */
+  border-radius: 10px;              /* Rounded corners for child-friendly design */
+  padding: 15px 20px;               /* Comfortable padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  margin-top: 20px;                 /* Space above the panel */
+  display: flex;                    /* Flexbox layout */
+  flex-wrap: wrap;                  /* Allow wrapping on small screens */
+  align-items: center;              /* Center items vertically */
+  justify-content: space-between;   /* Space items horizontally */
 }
 
 .control-label {
-  font-weight: 600;
-  font-size: 16px;
-  color: #333;
-  margin-right: 15px;
+  font-weight: 600;                 /* Semi-bold for better visibility */
+  font-size: 16px;                  /* Readable font size */
+  color: #333;                      /* Dark text for contrast */
+  margin-right: 15px;               /* Space to the right */
 }
 
 /* Color Selector Styles */
 .color-selector {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  flex: 1 1 300px;
+  display: flex;                    /* Flexbox layout */
+  align-items: center;              /* Center items vertically */
+  margin-bottom: 15px;              /* Space below the selector */
+  flex: 1 1 300px;                  /* Flexible width with minimum */
 }
 
 .color-options {
-  display: flex;
-  gap: 10px;
+  display: flex;                    /* Flexbox layout */
+  gap: 10px;                        /* Space between color options */
 }
 
 .color-option {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 2px solid #D0D0D0;
-  cursor: pointer;
-  transition: transform 0.2s ease, border-color 0.3s ease;
+  width: 38px;                      /* Large touch targets */
+  height: 38px;                     /* Large touch targets */
+  border-radius: 50%;               /* Circular color swatches */
+  border: 2px solid #D0D0D0;        /* Light border */
+  cursor: pointer;                  /* Pointer cursor on hover */
+  transition: transform 0.2s ease, border-color 0.3s ease; /* Smooth animations */
 }
 
 .color-option:hover {
-  transform: scale(1.1);
+  transform: scale(1.1);            /* Grow on hover for tactile feedback */
 }
 
 .color-option.selected {
-  border: 3px solid #333;
-  transform: scale(1.15);
+  border: 3px solid #333;           /* Dark border for selected color */
+  transform: scale(1.15);           /* Slightly larger when selected */
 }
 
 /* Number Buttons Styles */
 .number-buttons {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  flex: 2 1 500px;
+  display: flex;                    /* Flexbox layout */
+  align-items: center;              /* Center items vertically */
+  flex-wrap: wrap;                  /* Allow wrapping */
+  gap: 8px;                         /* Space between buttons */
+  flex: 2 1 500px;                  /* Flexible width with minimum */
 }
 
 .number-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 60px;
-  height: 48px;
-  border-radius: 8px;
-  border: 2px solid;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.1s ease, box-shadow 0.2s ease;
-  user-select: none;
+  display: flex;                    /* Flexbox for centering content */
+  justify-content: center;          /* Center horizontally */
+  align-items: center;              /* Center vertically */
+  min-width: 60px;                  /* Minimum width for touch */
+  height: 48px;                     /* Tall buttons for easy tapping */
+  border-radius: 8px;               /* Rounded corners */
+  border: 2px solid;                /* Border matching color */
+  font-size: 18px;                  /* Large text */
+  font-weight: bold;                /* Bold text for visibility */
+  cursor: pointer;                  /* Pointer cursor on hover */
+  transition: transform 0.1s ease, box-shadow 0.2s ease; /* Smooth animations */
+  user-select: none;                /* Prevent text selection */
 }
 
 .number-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);      /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow for depth on hover */
 }
 
 .number-button:active {
-  transform: translateY(1px);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);       /* Push down when active */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Reduced shadow when pressed */
 }
 
 /* Action Buttons */
 .action-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  display: flex;                    /* Flexbox layout */
+  gap: 10px;                        /* Space between buttons */
+  margin-top: 10px;                 /* Space above button group */
 }
 
 .action-button {
-  padding: 8px 16px;
-  border-radius: 6px;
-  border: none;
-  background-color: #4A6FFF;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s;
+  padding: 8px 16px;                /* Comfortable padding */
+  border-radius: 6px;               /* Rounded corners */
+  border: none;                     /* No border */
+  background-color: #4A6FFF;        /* Bright blue background */
+  color: white;                     /* White text for contrast */
+  font-weight: bold;                /* Bold text for visibility */
+  cursor: pointer;                  /* Pointer cursor on hover */
+  transition: background-color 0.2s; /* Smooth color transition */
 }
 
 .action-button:hover {
-  background-color: #3559DD;
+  background-color: #3559DD;        /* Darker blue on hover */
 }
 
 .action-button.reset {
-  background-color: #ff4a4a;
+  background-color: #ff4a4a;        /* Red for reset button */
 }
 
 .action-button.reset:hover {
-  background-color: #e03535;
+  background-color: #e03535;        /* Darker red on hover */
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .control-panel {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column;         /* Stack elements vertically on mobile */
+    align-items: flex-start;        /* Align to the start */
   }
   
   .color-selector, .number-buttons {
-    width: 100%;
-    margin-bottom: 15px;
+    width: 100%;                    /* Full width on mobile */
+    margin-bottom: 15px;            /* Space below on mobile */
   }
   
   .number-buttons {
-    justify-content: flex-start;
+    justify-content: flex-start;    /* Left align buttons on mobile */
   }
   
   .number-button {
-    min-width: 50px;
-    height: 40px;
-    font-size: 16px;
+    min-width: 50px;                /* Smaller buttons on mobile */
+    height: 40px;                   /* Shorter buttons on mobile */
+    font-size: 16px;                /* Smaller text on mobile */
   }
 }
 
 /* Tablet landscape orientation */
 @media screen and (min-width: 1024px) {
   .control-panel {
-    padding: 15px 30px;
+    padding: 15px 30px;             /* More padding on larger screens */
   }
   
   .number-button {
-    min-width: 70px;
+    min-width: 70px;                /* Wider buttons on larger screens */
   }
 }
 
 /* For touch screens */
 @media (pointer: coarse) {
   .color-option {
-    width: 44px;
-    height: 44px;
+    width: 44px;                    /* Larger touch targets */
+    height: 44px;                   /* Larger touch targets */
   }
   
   .number-button {
-    min-width: 65px;
-    height: 55px;
-    font-size: 20px;
+    min-width: 65px;                /* Wider buttons for touch */
+    height: 55px;                   /* Taller buttons for touch */
+    font-size: 20px;                /* Larger text for touch */
   }
 } 

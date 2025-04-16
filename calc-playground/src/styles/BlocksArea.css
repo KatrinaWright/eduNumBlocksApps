@@ -1,134 +1,134 @@
 .blocks-area {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  max-height: 100%;
+  display: flex;                     /* Use flexbox for layout */
+  flex-direction: column;            /* Stack elements vertically */
+  height: 100%;                      /* Take full height of container */
+  width: 100%;                       /* Take full width of container */
+  max-height: 100%;                  /* Prevent overflow */
 }
 
 .blocks-container {
-  flex: 1 1 auto;
-  position: relative;
-  min-height: 150px;
-  max-height: 60vh;
-  overflow: auto;
-  background-color: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 1rem;
+  flex: 1 1 auto;                    /* Grow and shrink as needed */
+  position: relative;                /* For absolute positioning of blocks */
+  min-height: 150px;                 /* Minimum height for usability */
+  max-height: 60vh;                  /* Limit height based on viewport */
+  overflow: auto;                    /* Allow scrolling if needed */
+  background-color: #fafafa;         /* Light background for contrast */
+  border: 1px solid #ddd;            /* Subtle border */
+  border-radius: 4px;                /* Rounded corners */
+  margin-bottom: 1rem;               /* Space below container */
 }
 
 .highlight-drop-area {
-  background-color: rgba(33, 150, 243, 0.1);
+  background-color: rgba(33, 150, 243, 0.1); /* Light blue highlight for drop zones */
 }
 
 .block {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 4px;
-  cursor: move;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.2s;
-  z-index: 1;
+  position: absolute;                /* Allows free positioning */
+  width: 30px;                       /* Fixed width for blocks */
+  height: 30px;                      /* Fixed height for blocks */
+  border-radius: 4px;                /* Slightly rounded corners */
+  cursor: move;                      /* Move cursor to indicate draggable */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: box-shadow 0.2s;       /* Smooth hover transition */
+  z-index: 1;                        /* Default stacking order */
 }
 
 .block:hover {
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-  z-index: 2;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  z-index: 2;                        /* Bring to front when hovered */
 }
 
 .club-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 1rem;
-  flex: 0 0 auto;
+  display: flex;                     /* Flexbox for button layout */
+  flex-wrap: wrap;                   /* Allow wrapping on small screens */
+  gap: 8px;                          /* Space between buttons */
+  margin-bottom: 1rem;               /* Space below button group */
+  flex: 0 0 auto;                    /* Don't grow or shrink */
 }
 
 .club-button {
-  padding: 8px 12px;
-  background-color: #4A6FFF;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  text-transform: capitalize;
-  transition: background-color 0.2s;
+  padding: 8px 12px;                 /* Comfortable padding for touch */
+  background-color: #4A6FFF;         /* Bright blue for visibility */
+  color: white;                      /* White text for contrast */
+  border: none;                      /* No border */
+  border-radius: 4px;                /* Rounded corners */
+  cursor: pointer;                   /* Pointer cursor on hover */
+  font-size: 0.9rem;                 /* Readable font size */
+  text-transform: capitalize;        /* Capitalize club names */
+  transition: background-color 0.2s; /* Smooth hover transition */
 }
 
 .club-button:hover {
-  background-color: #3559DD;
+  background-color: #3559DD;         /* Slightly darker on hover */
 }
 
 .examples-panel {
-  background-color: #f7f7f7;
-  padding: 1rem;
-  border-radius: 4px;
-  border-left: 4px solid #4A6FFF;
-  margin-top: auto;
-  flex: 0 0 auto;
+  background-color: #f7f7f7;         /* Light background */
+  padding: 1rem;                     /* Comfortable padding */
+  border-radius: 4px;                /* Rounded corners */
+  border-left: 4px solid #4A6FFF;    /* Blue accent border */
+  margin-top: auto;                  /* Push to bottom */
+  flex: 0 0 auto;                    /* Don't grow or shrink */
 }
 
 .examples-panel h3 {
-  margin-top: 0;
-  color: #333;
-  font-size: 1.1rem;
+  margin-top: 0;                     /* Remove default margin */
+  color: #333;                       /* Dark text for readability */
+  font-size: 1.1rem;                 /* Larger font for heading */
 }
 
 .examples-panel ul {
-  margin: 0;
-  padding-left: 20px;
-  color: #555;
+  margin: 0;                         /* Remove default margin */
+  padding-left: 20px;                /* Space for list markers */
+  color: #555;                       /* Medium gray for text */
 }
 
 .examples-panel li {
-  margin-bottom: 4px;
+  margin-bottom: 4px;                /* Space between list items */
 }
 
 .blocks-placeholder {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: #777;
-  text-align: center;
-  font-size: 1.2rem;
+  display: flex;                     /* Center content */
+  flex-direction: column;            /* Stack vertically */
+  justify-content: center;           /* Center vertically */
+  align-items: center;               /* Center horizontally */
+  height: 100%;                      /* Full height */
+  color: #777;                       /* Medium gray for placeholder text */
+  text-align: center;                /* Center text */
+  font-size: 1.2rem;                 /* Larger font for visibility */
 }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .blocks-container {
-    min-height: 120px;
-    max-height: 40vh;
+    min-height: 120px;               /* Smaller minimum height on mobile */
+    max-height: 40vh;                /* Smaller maximum height on mobile */
   }
   
   .club-button {
-    padding: 6px 8px;
-    font-size: 0.8rem;
+    padding: 6px 8px;                /* Smaller padding on mobile */
+    font-size: 0.8rem;               /* Smaller font on mobile */
   }
   
   .examples-panel {
-    font-size: 0.9rem;
-    padding: 0.75rem;
+    font-size: 0.9rem;               /* Smaller font on mobile */
+    padding: 0.75rem;                /* Smaller padding on mobile */
   }
   
   .block {
-    width: 25px;
-    height: 25px;
+    width: 25px;                     /* Smaller blocks on mobile */
+    height: 25px;                    /* Smaller blocks on mobile */
   }
 }
 
 /* Landscape orientation on mobile */
 @media (max-height: 500px) and (max-width: 900px) {
   .blocks-container {
-    max-height: 45vh;
+    max-height: 45vh;                /* Adjusted height for landscape */
   }
   
   .examples-panel {
-    max-height: 25vh;
-    overflow-y: auto;
+    max-height: 25vh;                /* Limit height in landscape */
+    overflow-y: auto;                /* Allow scrolling if needed */
   }
 } 
