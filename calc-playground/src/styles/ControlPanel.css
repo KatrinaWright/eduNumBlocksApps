@@ -1,0 +1,162 @@
+.control-panel {
+  width: 100%;
+  background-color: #EAEAEA;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.control-label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  margin-right: 15px;
+}
+
+/* Color Selector Styles */
+.color-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  flex: 1 1 300px;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+}
+
+.color-option {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #D0D0D0;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.3s ease;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.color-option.selected {
+  border: 3px solid #333;
+  transform: scale(1.15);
+}
+
+/* Number Buttons Styles */
+.number-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 2 1 500px;
+}
+
+.number-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.number-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.number-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.action-button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #4A6FFF;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.action-button:hover {
+  background-color: #3559DD;
+}
+
+.action-button.reset {
+  background-color: #ff4a4a;
+}
+
+.action-button.reset:hover {
+  background-color: #e03535;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .control-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .color-selector, .number-buttons {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .number-buttons {
+    justify-content: flex-start;
+  }
+  
+  .number-button {
+    min-width: 50px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/* Tablet landscape orientation */
+@media screen and (min-width: 1024px) {
+  .control-panel {
+    padding: 15px 30px;
+  }
+  
+  .number-button {
+    min-width: 70px;
+  }
+}
+
+/* For touch screens */
+@media (pointer: coarse) {
+  .color-option {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .number-button {
+    min-width: 65px;
+    height: 55px;
+    font-size: 20px;
+  }
+} 
