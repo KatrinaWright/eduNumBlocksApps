@@ -1,12 +1,54 @@
-# React + Vite
+# Calc Playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A combined calculator and number blocks playground app for children's education, designed for tablets and touch devices.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive calculator with colorful number buttons
+- Number blocks visualization for learning counting and basic math
+- Drag and drop blocks for spatial organization
+- Real-world examples for each number
+- Mathematical "clubs" for understanding number properties (odd, even, prime, etc.)
+- Custom block creation with different colors
+- Responsive design optimized for tablets and mobile devices
 
-## Expanding the ESLint configuration
+## Technology
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- React DnD for drag and drop
+- Jest for testing
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Run tests
+npm test
+```
+
+## Data Structure
+
+The app uses a rich JSON data structure that includes:
+- Color representation for each number
+- Mathematical properties (odd, even, prime, square, etc.)
+- Real-world examples for each number
+
+## Credits
+
+This application is a merged version of number-playground and number-blocks-app, optimized for children's educational purposes. 

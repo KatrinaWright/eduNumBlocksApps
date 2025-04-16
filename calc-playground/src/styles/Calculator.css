@@ -1,0 +1,117 @@
+.calculator {
+  width: 100%;
+  max-width: 320px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.calculator-display {
+  background-color: #333;
+  color: white;
+  font-size: 2.5rem;
+  padding: 1rem;
+  text-align: right;
+  min-height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  word-break: break-all;
+}
+
+.calculator-keypad {
+  display: grid;
+  /* Four columns: 3 for digits/functions and 1 for operators */
+  grid-template-columns: 3fr 1fr;
+  background-color: #999;
+}
+
+.function-keys {
+  /* Span 3 columns for the clear button */
+  grid-column: span 3;
+  display: grid;
+}
+
+.digit-keys {
+  /* Digit keypad as a 4x3 grid for clear number layout */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: span 3;
+}
+
+.key-zero {
+  /* Make 0 button span 2 columns like traditional calculators */
+  grid-column: span 2;
+}
+
+.operator-keys {
+  /* Operators in a single column */
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column: 4;
+  grid-row: span 2;
+}
+
+.calculator button {
+  border: none;
+  font-size: 1.5rem;
+  height: 60px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  outline: none;
+  margin: 1px;
+}
+
+.calculator button:hover {
+  opacity: 0.9;
+}
+
+.calculator button:active {
+  transform: translateY(2px);
+}
+
+.key-operator {
+  background-color: #f5923e !important;
+  color: white;
+  font-weight: bold;
+}
+
+.key-equals {
+  background-color: #2196f3 !important;
+  color: white;
+  font-weight: bold;
+}
+
+.key-clear {
+  background-color: #f44336 !important;
+  color: white;
+  font-weight: bold;
+}
+
+.key-digit {
+  font-weight: bold;
+}
+
+.key-dot {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+/* Ensure the calculator is properly sized on all devices */
+@media (max-width: 768px) {
+  .calculator {
+    max-width: 100%;
+  }
+  
+  .calculator-display {
+    font-size: 2rem;
+    min-height: 60px;
+  }
+  
+  .calculator button {
+    font-size: 1.3rem;
+    height: 50px;
+  }
+} 

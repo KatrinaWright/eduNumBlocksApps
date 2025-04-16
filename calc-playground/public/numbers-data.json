@@ -1,0 +1,1370 @@
+{
+    "1": {
+      "colors": {"red": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": true,
+        "cube": true,
+        "step_squad": true,
+        "super_rectangle": false,
+        "multiplication_tables": [1]
+      },
+      "real_world_examples": [
+        "Single item",
+        "One person",
+        "A dollar/pound/euro",
+        "First place"
+      ]
+    },
+    "2": {
+      "colors": {"orange": 2},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2]
+      },
+      "real_world_examples": [
+        "Pair of shoes",
+        "Twins",
+        "Double-decker bus",
+        "Binary (0 and 1)"
+      ]
+    },
+    "3": {
+      "colors": {"yellow": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": true,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 3]
+      },
+      "real_world_examples": [
+        "Traffic light colors",
+        "Triangle sides",
+        "Tricycle wheels",
+        "The Three Little Pigs"
+      ]
+    },
+    "4": {
+      "colors": {"green": 4},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": true,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 4]
+      },
+      "real_world_examples": [
+        "Car wheels",
+        "Seasons in a year",
+        "Sides of a square",
+        "Cardinal directions"
+      ]
+    },
+    "5": {
+      "colors": {"light_blue": 5},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 5]
+      },
+      "real_world_examples": [
+        "Fingers on one hand",
+        "Olympic rings",
+        "Pentagonal shape",
+        "Five senses"
+      ]
+    },
+    "6": {
+      "colors": {"indigo": 6},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": true,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 6]
+      },
+      "real_world_examples": [
+        "Sides of a hexagon",
+        "Six-pack of drinks",
+        "Half a dozen eggs",
+        "Insect legs"
+      ]
+    },
+    "7": {
+      "colors": {"red": 1, "orange": 1, "yellow": 1, "green": 1, "light_blue": 1, "indigo": 1, "violet": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 7]
+      },
+      "real_world_examples": [
+        "Days in a week",
+        "Rainbow colors",
+        "Continents on Earth",
+        "Musical notes in a scale"
+      ]
+    },
+    "8": {
+      "colors": {"pink": 8},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": true,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 4, 8]
+      },
+      "real_world_examples": [
+        "Spider legs",
+        "Octagon sides",
+        "Piano octave notes",
+        "Pieces in a byte"
+      ]
+    },
+    "9": {
+      "colors": {"light_gray": 3, "mid_gray": 3, "dark_gray": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": true,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 3, 9]
+      },
+      "real_world_examples": [
+        "Players in a baseball team",
+        "Lives of a cat",
+        "Tic-tac-toe grid squares",
+        "Planets in the solar system (classical)"
+      ]
+    },
+    "10": {
+      "colors": {"white_red": 10},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": true,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 5, 10]
+      },
+      "real_world_examples": [
+        "Fingers on both hands",
+        "Base of decimal system",
+        "Ten pin bowling",
+        "Perfect score (out of 10)"
+      ]
+    },
+    "11": {
+      "colors": {"white_red": 10, "red": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 11]
+      },
+      "real_world_examples": [
+        "Players in a soccer/football team",
+        "Volume dial that 'goes to 11'",
+        "Last hour before noon/midnight",
+        "Number of players in a cricket team"
+      ]
+    },
+    "12": {
+      "colors": {"white_red": 10, "orange": 2},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 4, 6, 12]
+      },
+      "real_world_examples": [
+        "Months in a year",
+        "Dozen eggs",
+        "Hours on a clock face",
+        "Inches in a foot"
+      ]
+    },
+    "13": {
+      "colors": {"white_red": 10, "yellow": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 13]
+      },
+      "real_world_examples": [
+        "Unlucky number in Western culture",
+        "Original number of American colonies",
+        "Cards in each suit of a deck",
+        "Baker's dozen"
+      ]
+    },
+    "14": {
+      "colors": {"white_red": 10, "green": 4},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 7, 14]
+      },
+      "real_world_examples": [
+        "Days in a fortnight",
+        "Valentine's Day (February 14)",
+        "Number of lines in a sonnet",
+        "Points on a basketball court"
+      ]
+    },
+    "15": {
+      "colors": {"white_red": 10, "light_blue": 5},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": true,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 3, 5, 15]
+      },
+      "real_world_examples": [
+        "Players in rugby union team",
+        "Minimum age for many movies rated PG-15",
+        "Minutes in a quarter hour",
+        "Letter tiles in a Scrabble word"
+      ]
+    },
+    "16": {
+      "colors": {"white_red": 10, "indigo": 6},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": true,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 4, 8, 16]
+      },
+      "real_world_examples": [
+        "Ounces in a pound",
+        "Chess pieces per player",
+        "Age of driving in many countries",
+        "Number of pawns in chess"
+      ]
+    },
+    "17": {
+      "colors": {"white_red": 10, "red": 1, "orange": 1, "yellow": 1, "green": 1, "light_blue": 1, "indigo": 1, "violet": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 17]
+      },
+      "real_world_examples": [
+        "Year of becoming adult in many countries",
+        "Syllables in a haiku poem (5-7-5)",
+        "Traditional coming of age in some cultures",
+        "UN Sustainable Development Goals (17 goals)"
+      ]
+    },
+    "18": {
+      "colors": {"white_red": 10, "pink": 8},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 6, 9, 18]
+      },
+      "real_world_examples": [
+        "Holes in a golf course",
+        "Voting age in many countries",
+        "Karat measure for pure gold",
+        "Legal adult age in many places"
+      ]
+    },
+    "19": {
+      "colors": {"white_red": 10, "light_gray": 3, "mid_gray": 3, "dark_gray": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 19]
+      },
+      "real_world_examples": [
+        "Element potassium (atomic number 19)",
+        "COVID-19",
+        "Last teen age",
+        "The '19th hole' (golf clubhouse)"
+      ]
+    },
+    "20": {
+      "colors": {"light_orange": 20},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 4, 5, 10, 20]
+      },
+      "real_world_examples": [
+        "Twenty Questions game",
+        "20/20 vision",
+        "Twenty-dollar bill",
+        "The Roaring Twenties"
+      ]
+    },
+    "21": {
+      "colors": {"light_orange": 20, "red": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": true,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 3, 7, 21]
+      },
+      "real_world_examples": [
+        "Blackjack winning score",
+        "Legal drinking age in many countries",
+        "Gun salute for dignitaries",
+        "Number of spots on a standard die (1+2+3+4+5+6)"
+      ]
+    },
+    "22": {
+      "colors": {"light_orange": 20, "orange": 2},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 11, 22]
+      },
+      "real_world_examples": [
+        "Letters in Hebrew alphabet",
+        "Catch-22 situation",
+        "Standard number of players in football/soccer game",
+        "Major Arcana cards in Tarot"
+      ]
+    },
+    "23": {
+      "colors": {"light_orange": 20, "yellow": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 23]
+      },
+      "real_world_examples": [
+        "Michael Jordan's jersey number",
+        "Chromosome pairs in human cells",
+        "The 23 Enigma (conspiracy theory)",
+        "23 skidoo (American slang phrase)"
+      ]
+    },
+    "24": {
+      "colors": {"light_orange": 20, "green": 4},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 4, 6, 8, 12, 24]
+      },
+      "real_world_examples": [
+        "Hours in a day",
+        "Carats in pure gold",
+        "Frames per second in film",
+        "Blackjack deck (24 face cards)"
+      ]
+    },
+    "25": {
+      "colors": {"light_orange": 20, "light_blue": 5},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": true,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 5, 25]
+      },
+      "real_world_examples": [
+        "Quarter of a century",
+        "Silver wedding anniversary",
+        "Squares on a 5×5 grid",
+        "American quarter (25 cents)"
+      ]
+    },
+    "26": {
+      "colors": {"light_orange": 20, "indigo": 6},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 13, 26]
+      },
+      "real_world_examples": [
+        "Letters in English alphabet",
+        "Weeks in half a year",
+        "Standard deck of cards (without jokers)",
+        "Marathon length in miles (approximately)"
+      ]
+    },
+    "27": {
+      "colors": {"light_orange": 20, "red": 1, "orange": 1, "yellow": 1, "green": 1, "light_blue": 1, "indigo": 1, "violet": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": true,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 3, 9, 27]
+      },
+      "real_world_examples": [
+        "Number of bones in the human hand",
+        "Countries in European Union (after Brexit)",
+        "Books in New Testament",
+        "Club in the '27 Club' (musicians who died at age 27)"
+      ]
+    },
+    "28": {
+      "colors": {"light_orange": 20, "pink": 8},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": true,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 4, 7, 14, 28]
+      },
+      "real_world_examples": [
+        "Days in February (leap year)",
+        "Lunar cycle (approximately)",
+        "Domino tiles in standard set",
+        "Standard number of days in a month"
+      ]
+    },
+    "29": {
+      "colors": {"light_orange": 20, "light_gray": 3, "mid_gray": 3, "dark_gray": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 29]
+      },
+      "real_world_examples": [
+        "Days in February in a leap year",
+        "Chemical symbol for copper (Cu, atomic number 29)",
+        "Number of days in most months",
+        "Common last day of a month"
+      ]
+    },
+    "30": {
+      "colors": {"light_yellow": 30},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 5, 6, 10, 15, 30]
+      },
+      "real_world_examples": [
+        "Days in April, June, September, and November",
+        "30-day month",
+        "Common age milestone",
+        "Minutes in half an hour"
+      ]
+    },
+    "31": {
+      "colors": {"light_yellow": 30, "red": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 31]
+      },
+      "real_world_examples": [
+        "Days in January, March, May, July, August, October, and December",
+        "Baskin-Robbins ice cream flavors",
+        "Halloween (October 31)",
+        "Maximum number of days in a month"
+      ]
+    },
+    "32": {
+      "colors": {"light_yellow": 30, "orange": 2},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 4, 8, 16, 32]
+      },
+      "real_world_examples": [
+        "Degrees Fahrenheit at which water freezes",
+        "Chess pieces in a game",
+        "Computer 32-bit systems",
+        "Piano keys in classical keyboards (plus white keys)"
+      ]
+    },
+    "33": {
+      "colors": {"light_yellow": 30, "yellow": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 3, 11, 33]
+      },
+      "real_world_examples": [
+        "Vertebrae in the human spine",
+        "Rotational speed of a vinyl LP record",
+        "Number associated with many conspiracy theories",
+        "Age of Jesus according to tradition"
+      ]
+    },
+    "34": {
+      "colors": {"light_yellow": 30, "green": 4},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 17, 34]
+      },
+      "real_world_examples": [
+        "Rule 34 of the internet",
+        "Number of consonants in Russian alphabet",
+        "Admendment to French Constitution",
+        "Interstate 34 in Illinois"
+      ]
+    },
+    "35": {
+      "colors": {"light_yellow": 30, "light_blue": 5},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 5, 7, 35]
+      },
+      "real_world_examples": [
+        "Coral/jade wedding anniversary",
+        "Traditional retirement age in many places",
+        "Minimum age for U.S. President",
+        "Number of pieces in some chess variant games"
+      ]
+    },
+    "36": {
+      "colors": {"light_yellow": 30, "indigo": 6},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": true,
+        "cube": false,
+        "step_squad": true,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 4, 6, 9, 12, 18, 36]
+      },
+      "real_world_examples": [
+        "Square of 6 (6²)",
+        "Number of total pieces in Chinese Checkers",
+        "Three dozen items",
+        "Number of possible outcomes with two dice"
+      ]
+    },
+    "37": {
+      "colors": {"light_yellow": 30, "red": 1, "orange": 1, "yellow": 1, "green": 1, "light_blue": 1, "indigo": 1, "violet": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 37]
+      },
+      "real_world_examples": [
+        "Normal human body temperature in Celsius (37°C)",
+        "Atomic number of rubidium",
+        "Number of plays attributed to Shakespeare",
+        "Number of weeks in a typical school year"
+      ]
+    },
+    "38": {
+      "colors": {"light_yellow": 30, "pink": 8},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 19, 38]
+      },
+      "real_world_examples": [
+        "Number of slots on an American roulette wheel",
+        "Atomic number of strontium",
+        "38th parallel (dividing North and South Korea)",
+        "38 Special (firearm caliber)"
+      ]
+    },
+    "39": {
+      "colors": {"light_yellow": 30, "light_gray": 3, "mid_gray": 3, "dark_gray": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 3, 13, 39]
+      },
+      "real_world_examples": [
+        "Number of books in the Old Testament (Protestant)",
+        "The Thirty-Nine Steps (novel/film)",
+        "Jack Nicklaus' record number of golf majors",
+        "Number of Scrabble tiles in French set"
+      ]
+    },
+    "40": {
+      "colors": {"light_green": 40},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 4, 5, 8, 10, 20, 40]
+      },
+      "real_world_examples": [
+        "Forty days and forty nights (Biblical)",
+        "Standard work week in hours",
+        "Ali Baba and the Forty Thieves",
+        "Ruby wedding anniversary (40 years)"
+      ]
+    },
+    "41": {
+      "colors": {"light_green": 40, "red": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 41]
+      },
+      "real_world_examples": [
+        "Sum of first 6 prime numbers (2+3+5+7+11+13)",
+        "Atomic number of niobium",
+        "Area code for Switzerland",
+        "Number of cards in a standard international Tarot deck minus Major Arcana"
+      ]
+    },
+    "42": {
+      "colors": {"light_green": 40, "orange": 2},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 6, 7, 14, 21, 42]
+      },
+      "real_world_examples": [
+        "Answer to Life, the Universe, and Everything (Hitchhiker's Guide)",
+        "Jackie Robinson's jersey number (retired across MLB)",
+        "Number of kilometers in a marathon (approximately)",
+        "Number of laws in cricket"
+      ]
+    },
+    "43": {
+      "colors": {"light_green": 40, "yellow": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 43]
+      },
+      "real_world_examples": [
+        "Richard Petty's car number in NASCAR",
+        "Atomic number of technetium",
+        "Number of chromosomes in a honey bee",
+        "Number of calories in one tablespoon of honey"
+      ]
+    },
+    "44": {
+      "colors": {"light_green": 40, "green": 4},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 4, 11, 22, 44]
+      },
+      "real_world_examples": [
+        "Atomic number of ruthenium",
+        "International dialing code for United Kingdom",
+        "RPM of a vinyl single record",
+        "Number of candles on a Hanukkah menorah during the entire festival"
+      ]
+    },
+    "45": {
+      "colors": {"light_green": 40, "light_blue": 5},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": true,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 3, 5, 9, 15, 45]
+      },
+      "real_world_examples": [
+        "Angle in right-angled isosceles triangle (45°)",
+        "Colt 45 revolver",
+        "Number of RPM for a vinyl album record",
+        "Sum of the first nine numbers (1+2+3+4+5+6+7+8+9)"
+      ]
+    },
+    "46": {
+      "colors": {"light_green": 40, "indigo": 6},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 23, 46]
+      },
+      "real_world_examples": [
+        "Human chromosomes",
+        "Atomic number of palladium",
+        "Number of books in Catholic Old Testament",
+        "Number of mountains with elevation over 7,000 meters"
+      ]
+    },
+    "47": {
+      "colors": {"light_green": 40, "red": 1, "orange": 1, "yellow": 1, "green": 1, "light_blue": 1, "indigo": 1, "violet": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 47]
+      },
+      "real_world_examples": [
+        "AK-47 rifle",
+        "Atomic number of silver",
+        "Agent 47 (Hitman video game character)",
+        "Degrees north latitude marking Canada-US border (partly)"
+      ]
+    },
+    "48": {
+      "colors": {"light_green": 40, "pink": 8},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 4, 6, 8, 12, 16, 24, 48]
+      },
+      "real_world_examples": [
+        "Continental United States (48 states)",
+        "Hours in two days",
+        "White keys on a standard piano",
+        "Original number of Pokémon in Generation I"
+      ]
+    },
+    "49": {
+      "colors": {"light_green": 40, "light_gray": 3, "mid_gray": 3, "dark_gray": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": true,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 7, 49]
+      },
+      "real_world_examples": [
+        "Square of 7 (7²)",
+        "Gold Rush year in California (1849)",
+        "Size of San Francisco in square miles",
+        "Squares on a 7×7 grid"
+      ]
+    },
+    "50": {
+      "colors": {"light_light_blue": 50},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 5, 10, 25, 50]
+      },
+      "real_world_examples": [
+        "Fifty states in the United States",
+        "Golden wedding anniversary",
+        "Half-century",
+        "Minimum passing score in many grading systems (50%)"
+      ]
+    },
+    "51": {
+      "colors": {"light_light_blue": 50, "red": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 3, 17, 51]
+      },
+      "real_world_examples": [
+        "Area 51 (secretive military facility)",
+        "Atomic number of antimony",
+        "Formula 51 (movie title)",
+        "Number of games in an NHL season (historical)"
+      ]
+    },
+    "52": {
+      "colors": {"light_light_blue": 50, "orange": 2},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 4, 13, 26, 52]
+      },
+      "real_world_examples": [
+        "Weeks in a year",
+        "Cards in a standard deck",
+        "Maximum score in a game of Gin Rummy",
+        "Number seen on 'Bad Luck Schleprock' from The Flintstones"
+      ]
+    },
+    "53": {
+      "colors": {"light_light_blue": 50, "yellow": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 53]
+      },
+      "real_world_examples": [
+        "Herbie the Love Bug's racing number",
+        "Atomic number of iodine",
+        "Interstate 53 in the United States",
+        "Melting point of gallium (in Kelvin)"
+      ]
+    },
+    "54": {
+      "colors": {"light_light_blue": 50, "green": 4},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 6, 9, 18, 27, 54]
+      },
+      "real_world_examples": [
+        "Cards in a deck with two jokers",
+        "Sum of first five square numbers",
+        "Number of colored squares on a Rubik's cube",
+        "Platinum wedding anniversary (in some traditions)"
+      ]
+    },
+    "55": {
+      "colors": {"light_light_blue": 50, "light_blue": 5},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": true,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 5, 11, 55]
+      },
+      "real_world_examples": [
+        "Double nickel (slang for 55 mph speed limit)",
+        "Emerald wedding anniversary (55 years)",
+        "Sammy Hagar song 'I Can't Drive 55'",
+        "Number of countries in the African Union"
+      ]
+    },
+    "56": {
+      "colors": {"light_light_blue": 50, "indigo": 6},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 4, 7, 8, 14, 28, 56]
+      },
+      "real_world_examples": [
+        "Number of cards in a deck with four jokers",
+        "Eight weeks (56 days)",
+        "Standard bottle size for ketchup (56 oz)",
+        "Twice 28 (two lunar cycles)"
+      ]
+    },
+    "57": {
+      "colors": {"light_light_blue": 50, "red": 1, "orange": 1, "yellow": 1, "green": 1, "light_blue": 1, "indigo": 1, "violet": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 3, 19, 57]
+      },
+      "real_world_examples": [
+        "Heinz 57 varieties",
+        "Number of sides on a dodecahedron plus its faces (30+27)",
+        "Common major city speed limit",
+        "Atomic number of lanthanum"
+      ]
+    },
+    "58": {
+      "colors": {"light_light_blue": 50, "pink": 8},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 29, 58]
+      },
+      "real_world_examples": [
+        "Number of counties in California",
+        "Model number of a classic Fender guitar amp",
+        "Code for international calls to Venezuela",
+        "Number of protected national parks in Thailand"
+      ]
+    },
+    "59": {
+      "colors": {"light_light_blue": 50, "light_gray": 3, "mid_gray": 3, "dark_gray": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 59]
+      },
+      "real_world_examples": [
+        "Atomic number of praseodymium",
+        "Number of beads in a standard Catholic rosary",
+        "Number of stellations of an icosahedron",
+        "The 59th minute (last minute of an hour)"
+      ]
+    },
+    "60": {
+      "colors": {"light_purple": 60},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60]
+      },
+      "real_world_examples": [
+        "Minutes in an hour",
+        "Seconds in a minute",
+        "Diamond wedding anniversary",
+        "Number of triplets in a standard deck of cards (60 red/black combinations)"
+      ]
+    },
+    "61": {
+      "colors": {"light_purple": 60, "red": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 61]
+      },
+      "real_world_examples": [
+        "Atomic number of promethium",
+        "Prime number following 59",
+        "Number of points needed in racquetball to win by 2",
+        "Traditional age of Shītenhōji in Japan"
+      ]
+    },
+    "62": {
+      "colors": {"light_purple": 60, "orange": 2},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 31, 62]
+      },
+      "real_world_examples": [
+        "Age for full Social Security benefits for people born 1943-1954",
+        "Earth orbit velocity in thousand mph",
+        "Atomic number of samarium",
+        "Full deck plus 10 (52+10)"
+      ]
+    },
+    "63": {
+      "colors": {"light_purple": 60, "yellow": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 3, 7, 9, 21, 63]
+      },
+      "real_world_examples": [
+        "Number of squares on a Chess/Checker board (8×8-1)",
+        "Number of books in the Bible (Catholic)",
+        "63 feet in 21 yards",
+        "Ancient mathematical ratio found in the great pyramid of Giza"
+      ]
+    },
+    "64": {
+      "colors": {"light_purple": 60, "green": 4},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": true,
+        "cube": true,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 4, 8, 16, 32, 64]
+      },
+      "real_world_examples": [
+        "Square of 8 (8²)",
+        "Cube of 4 (4³)",
+        "Number of squares on a chess/checkerboard",
+        "Number of hexagrams in the I Ching"
+      ]
+    },
+    "65": {
+      "colors": {"light_purple": 60, "light_blue": 5},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 5, 13, 65]
+      },
+      "real_world_examples": [
+        "Traditional retirement age",
+        "Number of steps in a mile (approximately)",
+        "Blue sapphire wedding anniversary",
+        "BASIC programming language's 'POKE 65' (produces 'A')"
+      ]
+    },
+    "66": {
+      "colors": {"light_purple": 60, "indigo": 6},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": true,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 6, 11, 22, 33, 66]
+      },
+      "real_world_examples": [
+        "Route 66 (historic US highway)",
+        "Number of books in the Bible (Protestant)",
+        "Sum of first 11 numbers",
+        "2/3 of 99"
+      ]
+    },
+    "67": {
+      "colors": {"light_purple": 60, "red": 1, "orange": 1, "yellow": 1, "green": 1, "light_blue": 1, "indigo": 1, "violet": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 67]
+      },
+      "real_world_examples": [
+        "Atomic number of holmium",
+        "Number of counties in Pennsylvania",
+        "Number of ancient Japanese arts of warfare",
+        "Number of chapters in the Quran"
+      ]
+    },
+    "68": {
+      "colors": {"light_purple": 60, "pink": 8},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 2, 4, 17, 34, 68]
+      },
+      "real_world_examples": [
+        "Roman numeral LXVIII",
+        "Atomic number of erbium",
+        "Number of positions in the Kama Sutra",
+        "Classic '68 Comeback Special' (Elvis Presley)"
+      ]
+    },
+    "69": {
+      "colors": {"light_purple": 60, "light_gray": 3, "mid_gray": 3, "dark_gray": 3},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 3, 23, 69]
+      },
+      "real_world_examples": [
+        "Yin-yang symbol (rotational)",
+        "Atomic number of thulium",
+        "Maximum number of items in a shopping cart (some stores)",
+        "Slang term for a reciprocal position"
+      ]
+    },
+    "70": {
+      "colors": {"light_violet": 70},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 5, 7, 10, 14, 35, 70]
+      },
+      "real_world_examples": [
+        "Platinum wedding anniversary (70 years)",
+        "Approximate number of translations of the Bible",
+        "Threescore and ten (Biblical lifespan)",
+        "Percentage grade C-"
+      ]
+    },
+    "71": {
+      "colors": {"light_violet": 70, "red": 1},
+      "clubs": {
+        "odd": true,
+        "even": false,
+        "prime": true,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": false,
+        "multiplication_tables": [1, 71]
+      },
+      "real_world_examples": [
+        "Atomic number of lutetium",
+        "Number of different arrangements of five non-attacking queens on a chessboard",
+        "Number of different colors in original Crayola crayon box",
+        "Number of generations in Noah's lineage"
+      ]
+    },
+    "72": {
+      "colors": {"light_violet": 70, "orange": 2},
+      "clubs": {
+        "odd": false,
+        "even": true,
+        "prime": false,
+        "square": false,
+        "cube": false,
+        "step_squad": false,
+        "super_rectangle": true,
+        "multiplication_tables": [1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72]
+      },
+      "real_world_examples": [
+        "Traditional age for human life in many cultures",
+        "Number of hours in 3 days",
+        "Par on most golf courses",
+        "Names of God in Kabbalah"
+      ]
+    }
+  }

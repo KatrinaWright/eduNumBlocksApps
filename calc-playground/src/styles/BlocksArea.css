@@ -1,0 +1,134 @@
+.blocks-area {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+}
+
+.blocks-container {
+  flex: 1 1 auto;
+  position: relative;
+  min-height: 150px;
+  max-height: 60vh;
+  overflow: auto;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.highlight-drop-area {
+  background-color: rgba(33, 150, 243, 0.1);
+}
+
+.block {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: move;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s;
+  z-index: 1;
+}
+
+.block:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.club-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1rem;
+  flex: 0 0 auto;
+}
+
+.club-button {
+  padding: 8px 12px;
+  background-color: #4A6FFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  transition: background-color 0.2s;
+}
+
+.club-button:hover {
+  background-color: #3559DD;
+}
+
+.examples-panel {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 4px solid #4A6FFF;
+  margin-top: auto;
+  flex: 0 0 auto;
+}
+
+.examples-panel h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.examples-panel ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #555;
+}
+
+.examples-panel li {
+  margin-bottom: 4px;
+}
+
+.blocks-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #777;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .blocks-container {
+    min-height: 120px;
+    max-height: 40vh;
+  }
+  
+  .club-button {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .examples-panel {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+  
+  .block {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (max-width: 900px) {
+  .blocks-container {
+    max-height: 45vh;
+  }
+  
+  .examples-panel {
+    max-height: 25vh;
+    overflow-y: auto;
+  }
+} 
